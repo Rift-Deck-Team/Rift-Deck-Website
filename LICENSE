@@ -1,0 +1,27 @@
+
+## ✅ Setup Steps
+
+1. **Delete** these from your repo:
+   - `.github/workflows/deploy.yml`
+   - `astro.config.mjs`
+   - `package.json`
+   - The entire `src/` folder
+   - `public/` folder (if it contains Astro-specific files)
+
+2. **Add** all 9 files above at these exact paths:
+   - `index.html`
+   - `features.html`
+   - `pricing.html`
+   - `compatibility.html`
+   - `roadmap.html`
+   - `docs.html`
+   - `css/style.css`
+   - `js/stars.js`
+   - `README.md`
+
+3. **Settings → Pages:**
+   - Source: **Deploy from a branch**
+   - Branch: **main** / Folder: **/ (root)**
+   - Save
+
+4. Wait ~60 seconds. Site goes live at:
