@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Docs — Rift Deck OS</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">RIFT<span>DECK</span></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="compatibility.html">Compatibility</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="docs.html">Docs</a></li>
+      </ul>
+      <a href="index.html#notify" class="btn-notify">Get Notified</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-section">
+      <h2>Documentation</h2>
+      <p class="sub">Guides for installing and using Rift Deck OS. Full docs coming at launch.</p>
+      <div class="doc-grid">
+        <article>
+          <h3>Installation</h3>
+          <ol>
+            <li>Download the latest ISO from the <a href="https://github.com/Rift-Deck-Team/rift-deck-os/releases">releases page</a>.</li>
+            <li>Flash to an 8GB+ USB drive using <code>dd</code> or balenaEtcher.</li>
+            <li>Boot from the USB on your target machine.</li>
+            <li>Connect to Wi-Fi when prompted.</li>
+          </ol>
+        </article>
+        <article>
+          <h3>First Boot</h3>
+          <ol>
+            <li>Rift Deck OS downloads Steam via Flatpak (~1GB).</li>
+            <li>Log into your Steam account.</li>
+            <li>Open Edge from Steam to access Xbox Cloud Gaming.</li>
+            <li>Install apps from the Rift Store.</li>
+          </ol>
+        </article>
+        <article>
+          <h3>Controller Setup</h3>
+          <ul>
+            <li>Xbox and PlayStation controllers work out of the box.</li>
+            <li>Pair via Bluetooth from the settings menu.</li>
+            <li>For custom mapping, use Steam Input.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>System Updates</h3>
+          <p>Rift Deck OS checks for updates on login. To update manually:</p>
+          <pre><code>apk update && apk upgrade
+flatpak update</code></pre>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div class="col"><h4>Rift Deck OS</h4><p>Your console. Your accounts. Your games.</p></div>
+      <div class="col"><h4>Project</h4><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="roadmap.html">Roadmap</a></div>
+      <div class="col"><h4>Resources</h4><a href="docs.html">Docs</a><a href="compatibility.html">Compatibility</a><a href="https://github.com/Rift-Deck-Team/rift-deck-os">Source Code</a></div>
+    </div>
+    <div class="legal"><p>© 2026 Rift Deck Project · GPL-3.0</p><p>Built on Alpine Linux. Not affiliated with Valve or Microsoft.</p></div>
+  </footer>
+  <script src="js/stars.js"></script>
+</body>
+</html>
